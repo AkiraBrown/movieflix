@@ -1,21 +1,19 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import SignIn from './components/SignIn/SignIn';
-import SignUp from './components/Home/sign-up-form/sign-up-form.component';
-import Navigation from './components/navigation/navigation.component';
+import Signin from './components/Signin/Signin';
+import Signup from './components/SignUp/SignUp';
 
-const App = () => {
+function App() {
   return (
     <Router>
+      <Navigation />
       <Routes>
-        <Route path='/' element={<Navigation />}>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='signin' element={<SignIn />} />
-          <Route path='sign-up' element={<SignUp />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
