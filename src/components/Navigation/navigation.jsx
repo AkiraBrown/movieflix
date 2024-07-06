@@ -6,7 +6,7 @@ import './navigation.styles.scss';
 
 const Navigation = () => {
   return (
-  <>
+    <Fragment>
       <div className='navigation'>
         <Link className='logo-container' to='/'>
           <movie className='logo' style={{ width: '50px', height: '50px' }} /> {/* Ensure the SVG has dimensions */}
@@ -21,7 +21,7 @@ const Navigation = () => {
         </div>
       </div>
       <Outlet />
-   </>
+    </Fragment>
   );
 };
 
