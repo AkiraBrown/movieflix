@@ -4,7 +4,7 @@ import './Signin.styles.scss';
 
 
 
-const Sigin = () => {
+const Signin = () => {
   return <h2>Signin Page</h2>;
 };
 
