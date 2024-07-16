@@ -1,9 +1,10 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/navigation/navigation';
-import Home from './components/home/home';
+import Navigation from './components/Navigation/Navigation';
+import Home from './components/Home/Home';
 import About from './components/about/about';
-import Signin from './components/signin/signin';
-import Signup from './components/signup/signup';
+import Signin from './components/Signin/Signin';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Signin" element={<Signin />} />
+        <Route path="/SignUp" element={<SignUp />} />
       </Routes>
     </Router>
   );

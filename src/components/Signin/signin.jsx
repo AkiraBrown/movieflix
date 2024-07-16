@@ -1,12 +1,13 @@
 import React from 'react';
+import './Signin.styles.scss';
 
 
 
 
-
-const SigIn = () => {
+const Sigin = () => {
   return <h2>Signin Page</h2>;
 };
 
 
-export default SigIn;
+// eslint-disable-next-line no-undef
+export default Signin;
